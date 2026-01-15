@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: sans-serif;
+    padding: 10px;
+    width: 270px;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  input {
+    width: 90px;
+    height: 40px; /* 🎯 버튼과 높이 맞춤 */
+    padding: 0 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  button {
+    height: 40px; /* 🎯 input과 동일한 높이 */
+    padding: 0 14px;
+    min-width: 80px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  #applyBtn {
+    width: 100%;
+    margin-top: 14px;
+    font-weight: bold;
+    height: 42px; /* 약간 강조 */
+  }
+</style>
+</head>
+<body>
+  <h3>Set Custom Height (px)</h3>
+  <div class="input-group">
+    <button id="minusBtn">-50</button>
+    <input type="number" id="heightInput" value="850" />
+    <button id="plusBtn">+50</button>
+  </div>
+  <button id="applyBtn">Apply</button>
+  <script src="popup.js"></script>
+</body>
+</html>

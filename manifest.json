@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Flipster Height Adjuster",
+  "version": "1.2",
+  "description": "Automatically and manually adjusts the height of the tradingview container on Flipster.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://flipster.io/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://flipster.io/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
